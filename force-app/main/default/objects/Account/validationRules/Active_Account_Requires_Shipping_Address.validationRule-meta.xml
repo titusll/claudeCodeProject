@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Account_Requires_Shipping_Address</fullName>
+    <active>true</active>
+    <description>Prevents an Account from being saved if Active is checked and any Shipping Address field is blank.</description>
+    <errorConditionFormula>ISPICKVAL(Active__c, "Yes") &amp;&amp; (
+    ISBLANK(ShippingStreet) ||
+    ISBLANK(ShippingCity) ||
+    ISBLANK(ShippingState) ||
+    ISBLANK(ShippingPostalCode) ||
+    ISBLANK(ShippingCountry)
+)</errorConditionFormula>
+    <errorMessage>Shipping Address must be complete when the Account is Active. Please fill in all Shipping Address fields.</errorMessage>
+</ValidationRule>

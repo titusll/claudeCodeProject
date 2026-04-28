@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conference</fullName>
+    <active>true</active>
+    <description>Record type for conference events.</description>
+    <label>Conference</label>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Conference</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

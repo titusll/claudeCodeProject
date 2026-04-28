@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sf project:*)",
+      "Bash(sf org:*)",
+      "Bash(sf data:*)",
+      "Bash(grep -v \"^$\")",
+      "Bash(\"C:/Program Files/sf/bin/sf.cmd\" data query --query \"SELECT QualifiedApiName, Label FROM FieldDefinition WHERE EntityDefinition.QualifiedApiName IN \\(''Album__c'',''Artist__c'',''Song__c''\\) AND QualifiedApiName LIKE ''%__c'' ORDER BY EntityDefinition.QualifiedApiName, QualifiedApiName\" --use-tooling-api)",
+      "Bash(powershell.exe -Command \"cd 'C:\\\\Users\\\\tlambe01\\\\claudeCodeProject'; sf project deploy start --source-dir 'force-app\\\\main\\\\default\\\\layouts\\\\Registration__c-Registration Layout.layout-meta.xml'\")",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Read(//c/Program Files/sf/client/bin/**)",
+      "Bash(\"C:/Program Files/sf/client/bin/node.exe\" \"C:/Program Files/sf/client/bin/run.js\" org list)",
+      "Bash(\"C:/Program Files/sf/client/bin/node.exe\" \"C:/Program Files/sf/client/bin/run.js\" org list metadata --metadata-type FlexiPage --target-org claudeCode)",
+      "Bash(\"C:/Program Files/sf/client/bin/node.exe\" \"C:/Program Files/sf/client/bin/run.js\" project retrieve start --metadata \"FlexiPage:Event_Record_Page\" --target-org claudeCode)",
+      "Bash(\"C:/Program Files/sf/client/bin/node.exe\" \"C:/Program Files/sf/client/bin/run.js\" project deploy start --source-dir force-app/main/default/flexipages/Venue_Record_Page.flexipage-meta.xml --target-org claudeCode)",
+      "Bash(\"C:/Program Files/sf/client/bin/node.exe\" \"C:/Program Files/sf/client/bin/run.js\" project retrieve start --metadata \"Layout:Venue__c-Venue Layout\" --target-org claudeCode)",
+      "Bash(\"C:/Program Files/sf/client/bin/node.exe\" \"C:/Program Files/sf/client/bin/run.js\" project deploy start --source-dir \"force-app/main/default/flexipages/Venue_Record_Page.flexipage-meta.xml\" --source-dir \"force-app/main/default/layouts/Venue__c-Venue Layout.layout-meta.xml\" --target-org claudeCode)",
+      "Bash(start \"\" \"c:/Users/tlambe01/claudeCodeProject/pong/index.html\")"
+    ]
+  }
+}

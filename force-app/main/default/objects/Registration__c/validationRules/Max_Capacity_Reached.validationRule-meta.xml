@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Max_Capacity_Reached</fullName>
+    <active>true</active>
+    <description>Prevents a new Registration from being created if the parent Event has reached its Capacity.</description>
+    <errorConditionFormula>ISNEW() &amp;&amp;
+    NOT(ISBLANK(Event__r.Capacity__c)) &amp;&amp;
+    Event__r.Total_Registrations__c &gt;= Event__r.Capacity__c</errorConditionFormula>
+    <errorMessage>This Event has reached its maximum capacity. No additional registrations can be accepted.</errorMessage>
+</ValidationRule>
