@@ -5,7 +5,7 @@
     <masterLabel>Event History</masterLabel>
     <description>Displays Event__c records for a given owner with create, edit, and delete capabilities.</description>
     <targets>
-        <target>lightning__FlowScreen</target>
+        <target>lightning__RecordPage</target>
     </targets>
     <targetConfigs>
         <targetConfig targets="lightning__FlowScreen">
