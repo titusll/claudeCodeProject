@@ -19,6 +19,7 @@ export default class EventHistory extends LightningElement {
 
     get hasEvents() {
         return this.events && this.events.length > 0;
+      
     }
 
     get modalTitle() {
