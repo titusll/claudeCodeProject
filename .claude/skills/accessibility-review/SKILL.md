@@ -7,9 +7,9 @@ description: >
   requests an accessibility review — phrases like "accessibility review", "a11y check",
   "run accessibility", "check accessibility", "review for accessibility", or
   "check my component for a11y". Also trigger when the user deploys, commits, or pushes
-  changes that include Lightning Web Components (LWC), Aura components, or Visualforce
-  pages — these are the customisable UX layers where accessibility standards apply.
-  NOT for Apex classes, triggers, flows, custom objects, fields, permission sets, profiles,
+  changes that include Lightning Web Components (LWC), Aura components, Visualforce
+  pages, or Screen Flows — these are the customisable UX layers where accessibility standards apply.
+  NOT for Apex classes, triggerss, custom objects, fields, permission sets, profiles,
   flexi pages, static resources, or any other non-UX metadata — those do not need this review.
 ---
 
@@ -30,10 +30,10 @@ Use this review when deploying, committing, or pushing changes to **customisable
 - **Lightning Web Components (LWC)** — `.html`, `.js`, `.css` files under `lwc/`
 - **Aura components** — `.cmp`, `.app`, `.evt`, `.js`, `.css` files under `aura/`
 - **Visualforce pages** — `.page`, `.component` files under `pages/` or `components/`
+- **Screen Flows** - files under `flows/`
 
 **Skip this review** for changes that only touch:
 - Apex classes, triggers, or test classes
-- Flows (screen or record-triggered)
 - Custom objects, fields, validation rules, permission sets, profiles
 - Flexi pages, static resources, custom labels
 - SOQL scripts, anonymous Apex, or any other non-UX metadata
