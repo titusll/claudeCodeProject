@@ -1,5 +1,6 @@
 ---
 name: accessibility-review
+context: fork
 description: >
   Accessibility compliance review for Salesforce UX components against WCAG 2.2 Level AA
   and NZ Government Web Accessibility Standard 1.2. Use this skill when the user explicitly
